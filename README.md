@@ -2,6 +2,8 @@
 
 neovim theme for code, not colors.
 
+<img width="1511" height="910" alt="Image" src="https://github.com/user-attachments/assets/5d94c01e-8b84-41d4-9dd4-52f9552cd892" />
+
 ## Installation
 
 ```lua
