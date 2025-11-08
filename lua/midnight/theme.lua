@@ -125,9 +125,9 @@ function M.apply()
 
   hi('@variable', { none = true })
 
-  hi('Pmenu', { bg = cs.med_grey }, { 'PmenuSbar' })
-  hi('PmenuSel', { fg = cs.med_grey, bg = cs.medium_emphasis })
-  hi('PmenuThumb', { bg = cs.medium_emphasis })
+  hi('Pmenu', { bg = cs.dark_grey }, { 'PmenuSbar' })
+  hi('PmenuSel', { bg = cs.med_grey })
+  hi('PmenuThumb', { bg = cs.grey })
 
   hi('LspInlayHint', { fg = cs.light_black })
   hi('LspSignatureActiveParameter', { underline = true, italic = true })
@@ -164,7 +164,13 @@ function M.apply()
 
   link('Search', 'HighlightUndo')
 
+  link('Pmenu', 'CmpPmenu')
+  link('PmenuSel', 'CmpPmenuSel')
+  hi('CmpItemAbbr', { fg = cs.white })
   hi('CmpItemAbbrMatch', { fg = cs.white, bold = true })
+  hi('CmpItemAbbrMatchFuzzy', { fg = cs.white, bold = true })
+  hi('CmpItemAbbrDeprecated', { fg = cs.light_black, strikethrough = true })
+  hi('CmpItemMenu', { fg = cs.light_black })
 
   for hlgroup, color in pairs({
     Key = 'white',
@@ -202,6 +208,7 @@ function M.apply()
   link('NormalFloat', 'FzfLuaBorder')
   hi('FzfLuaHeaderText', { fg = cs.white }, { 'FzfLuaBufFlagCur' })
   hi('FzfLuaBufFlagAlt', { fg = cs.white })
+  link('Normal', 'FzfLuaLivePrompt')
 
   vim.g.terminal_color_0 = cs.black
   vim.g.terminal_color_1 = cs.red
