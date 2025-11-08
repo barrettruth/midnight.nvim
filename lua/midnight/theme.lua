@@ -14,8 +14,8 @@ local M = {}
 ---@param from string
 ---@param tos string|string[]
 local function link(from, tos)
-  tos = type(tos) == 'string' and { tos } or tos
-  for _, to in ipairs(tos) do
+  local tos_list = type(tos) == 'string' and { tos } or tos --[[@as string[] ]]
+  for _, to in ipairs(tos_list) do
     vim.api.nvim_set_hl(0, to, { link = from })
   end
 end
@@ -72,13 +72,13 @@ function M.apply()
   hi('CursorLine', { bg = cs.dark_grey }, { 'ColorColumn', 'Folded', 'Visual' })
   hi('CursorLineNr', { fg = cs.medium_emphasis })
 
-  hi('Conceal', { fg = cs.light_black, bg = cs.bg })
+  hi('Conceal', { fg = cs.light_black, bg = cs.black })
   hi('Directory', { fg = cs.white })
   hi('Error', { fg = cs.red })
   hi('ErrorMsg', { bold = true, underline = true, fg = cs.red })
   hi('MoreMsg', { fg = cs.yellow }, { 'WarningMsg' })
   hi('MatchParen', { bg = cs.med_grey })
-  hi('NormalFloat', { bg = cs.bg }, {
+  hi('NormalFloat', { bg = cs.black }, {
     'LspInfoBorder',
     'FloatBorder',
     'FloatShadow',
@@ -125,9 +125,9 @@ function M.apply()
 
   hi('@variable', { none = true })
 
-  hi('Pmenu', { bg = cs.med_grey }, { 'PmenuSbar' })
-  hi('PmenuSel', { fg = cs.med_grey, bg = cs.medium_emphasis })
-  hi('PmenuThumb', { bg = cs.medium_emphasis })
+  hi('Pmenu', { bg = cs.dark_grey }, { 'PmenuSbar' })
+  hi('PmenuSel', { bg = cs.med_grey })
+  hi('PmenuThumb', { bg = cs.grey })
 
   hi('LspInlayHint', { fg = cs.light_black })
   hi('LspSignatureActiveParameter', { underline = true, italic = true })
@@ -164,7 +164,13 @@ function M.apply()
 
   link('Search', 'HighlightUndo')
 
+  link('Pmenu', 'CmpPmenu')
+  link('PmenuSel', 'CmpPmenuSel')
+  hi('CmpItemAbbr', { fg = cs.white })
   hi('CmpItemAbbrMatch', { fg = cs.white, bold = true })
+  hi('CmpItemAbbrMatchFuzzy', { fg = cs.white, bold = true })
+  hi('CmpItemAbbrDeprecated', { fg = cs.light_black, strikethrough = true })
+  hi('CmpItemMenu', { fg = cs.light_black })
 
   for hlgroup, color in pairs({
     Key = 'white',
@@ -202,6 +208,7 @@ function M.apply()
   link('NormalFloat', 'FzfLuaBorder')
   hi('FzfLuaHeaderText', { fg = cs.white }, { 'FzfLuaBufFlagCur' })
   hi('FzfLuaBufFlagAlt', { fg = cs.white })
+  link('Normal', 'FzfLuaLivePrompt')
 
   vim.g.terminal_color_0 = cs.black
   vim.g.terminal_color_1 = cs.red

@@ -21,3 +21,4 @@ neovim theme for code, not colors.
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [blink.cmp](https://github.com/saghen/blink.cmp)

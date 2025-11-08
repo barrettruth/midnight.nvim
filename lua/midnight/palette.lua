@@ -73,6 +73,15 @@ M.daylight = {
   cyan = '#00BFFF',
   white = '#ffffff',
 
+  bright_black = '#555555',
+  bright_red = '#ff0000',
+  bright_green = '#00ff00',
+  bright_yellow = '#ffa500',
+  bright_blue = '#0000ff',
+  bright_magenta = '#ff00ff',
+  bright_cyan = '#00ffff',
+  bright_white = '#ffffff',
+
   light_black = '#555555',
   light_grey = '#ECECEC',
   light_red = '#ff0000',
