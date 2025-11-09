@@ -1,0 +1,53 @@
+*midnight.nvim.txt*        Neovim theme for code, not colors
+
+Author:  Barrett Ruth <br.barrettruth@gmail.com>
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+INTRODUCTION                                                   *midnight.nvim*
+
+midnight.nvim is a minimalist colorscheme with two variants:
+
+    midnight    Dark theme
+    daylight    Light theme
+
+==============================================================================
+INSTALLATION                                           *midnight-installation*
+
+>lua
+    {
+      'barrett-ruth/midnight.nvim',
+      config = function()
+        vim.cmd.colorscheme('midnight')
+      end,
+    }
+<
+
+==============================================================================
+COLORSCHEMES                                           *midnight-colorschemes*
+
+:colorscheme midnight                                   *midnight* *:midnight*
+:colorscheme daylight                                   *daylight* *:daylight*
+
+==============================================================================
+PLUGIN INTEGRATION                                     *midnight-integration*
+
+Built-in support for:
+    • nvim-treesitter
+    • nvim-cmp
+    • blink.cmp
+    • fzf-lua
+    • gitsigns.nvim
+
+==============================================================================
+PALETTE                                                       *midnight-palette*
+
+midnight ~
+    black: #121212    red: #ff6b6b       green: #98c379    yellow: #e5c07b
+    blue: #7aa2f7     magenta: #c678dd   cyan: #56b6c2     white: #e0e0e0
+
+daylight ~
+    black: #f5f5f5    red: #c7254e       green: #2d7f3e    yellow: #996800
+    blue: #3b5bdb     magenta: #ae3ec9   cyan: #1098ad     white: #1a1a1a
+
+ vim:tw=78:ts=8:ft=help:norl:
