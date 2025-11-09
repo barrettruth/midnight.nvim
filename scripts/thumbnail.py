@@ -20,8 +20,10 @@ mask = np.zeros((height, width), dtype=np.uint8)
 
 for y in range(height):
     for x in range(width):
-        progress = (x + (height - y)) / (width + height)
-        mask[y, x] = int(progress * 255)
+        if y * width < x * height:
+            mask[y, x] = 255
+        else:
+            mask[y, x] = 0
 
 mask_img = Image.fromarray(mask, mode="L")
 result = Image.composite(light, dark, mask_img)
