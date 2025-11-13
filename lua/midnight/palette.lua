@@ -56,7 +56,7 @@ M.midnight = {
   light_black = '#666666',
   grey = '#3d3d3d',
   med_grey = '#2d2d2d',
-  dark_grey = '#252525',
+  dark_grey = '#222222',
 
   medium_emphasis = '#999999',
 }
