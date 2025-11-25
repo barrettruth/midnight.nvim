@@ -172,29 +172,47 @@ function M.apply()
   hi('CmpItemAbbrDeprecated', { fg = cs.light_black, strikethrough = true })
   hi('CmpItemMenu', { fg = cs.light_black })
 
-  link('Boolean', 'CmpItemKindBoolean')
-  link('Constant', 'CmpItemKindConstant')
-  link('Function', 'CmpItemKindFunction')
-  link('Keyword', 'CmpItemKindKeyword')
-  link('Namespace', 'CmpItemKindNamespace')
-  link('Number', 'CmpItemKindNumber')
-  link('Operator', 'CmpItemKindOperator')
-  link('String', 'CmpItemKindString')
-  link('Type', 'CmpItemKindClass')
-  link('Type', 'CmpItemKindEnum')
-  link('Type', 'CmpItemKindInterface')
-  link('Type', 'CmpItemKindStruct')
-  link('Type', 'CmpItemKindConstructor')
-  link('Type', 'CmpItemKindTypeParameter')
-  link('Function', 'CmpItemKindMethod')
-  link('Normal', 'CmpItemKindVariable')
-  link('Normal', 'CmpItemKindProperty')
-  link('Normal', 'CmpItemKindField')
-  link('Normal', 'CmpItemKindText')
-  link('Normal', 'CmpItemKindFile')
-  link('String', 'CmpItemKindKey')
-  link('Directory', 'CmpItemKindFolder')
-  link('Constant', 'CmpItemKindNull')
+  link('Boolean', { 'CmpItemKindBoolean', 'BlinkCmpKindBoolean' })
+  link(
+    'Constant',
+    { 'CmpItemKindConstant', 'BlinkCmpKindConstant', 'CmpItemKindNull', 'BlinkCmpKindNull' }
+  )
+  link(
+    'Function',
+    { 'CmpItemKindFunction', 'BlinkCmpKindFunction', 'CmpItemKindMethod', 'BlinkCmpKindMethod' }
+  )
+  link('Keyword', { 'CmpItemKindKeyword', 'BlinkCmpKindKeyword' })
+  link('Namespace', { 'CmpItemKindNamespace', 'BlinkCmpKindNamespace' })
+  link('Number', { 'CmpItemKindNumber', 'BlinkCmpKindNumber' })
+  link('Operator', { 'CmpItemKindOperator', 'BlinkCmpKindOperator' })
+  link('String', { 'CmpItemKindString', 'BlinkCmpKindString', 'CmpItemKindKey', 'BlinkCmpKindKey' })
+  link('Type', {
+    'CmpItemKindClass',
+    'BlinkCmpKindClass',
+    'CmpItemKindEnum',
+    'BlinkCmpKindEnum',
+    'CmpItemKindInterface',
+    'BlinkCmpKindInterface',
+    'CmpItemKindStruct',
+    'BlinkCmpKindStruct',
+    'CmpItemKindConstructor',
+    'BlinkCmpKindConstructor',
+    'CmpItemKindTypeParameter',
+    'BlinkCmpKindTypeParameter',
+  })
+  link('Normal', {
+    'CmpItemKindVariable',
+    'BlinkCmpKindVariable',
+    'CmpItemKindProperty',
+    'BlinkCmpKindProperty',
+    'CmpItemKindField',
+    'BlinkCmpKindField',
+    'CmpItemKindText',
+    'BlinkCmpKindText',
+    'CmpItemKindFile',
+    'BlinkCmpKindFile',
+  })
+  link('Directory', { 'CmpItemKindFolder', 'BlinkCmpKindFolder' })
 
   link('NormalFloat', 'NullLsInfoBorder')
 
