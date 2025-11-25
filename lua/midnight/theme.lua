@@ -73,7 +73,7 @@ function M.apply()
   hi('CursorLineNr', { fg = cs.medium_emphasis })
 
   hi('Conceal', { fg = cs.light_black, bg = cs.black })
-  hi('Directory', { fg = cs.white })
+  hi('Directory', { fg = cs.blue })
   hi('Error', { fg = cs.red })
   hi('ErrorMsg', { bold = true, underline = true, fg = cs.red })
   hi('MoreMsg', { fg = cs.yellow }, { 'WarningMsg' })
@@ -172,34 +172,29 @@ function M.apply()
   hi('CmpItemAbbrDeprecated', { fg = cs.light_black, strikethrough = true })
   hi('CmpItemMenu', { fg = cs.light_black })
 
-  for hlgroup, color in pairs({
-    Key = 'white',
-    Keyword = 'blue',
-    Folder = 'white',
-    File = 'white',
-    Boolean = 'green',
-    Class = 'white',
-    Constant = 'green',
-    Constructor = 'white',
-    Enum = 'white',
-    EnumMember = 'white',
-    Field = 'white',
-    Function = 'white',
-    Interface = 'white',
-    Method = 'white',
-    Namespace = 'white',
-    Null = 'white',
-    Number = 'green',
-    Operator = 'white',
-    Property = 'white',
-    String = 'green',
-    Struct = 'white',
-    Text = 'white',
-    TypeParameter = 'white',
-    Variable = 'white',
-  }) do
-    hi('CmpItemKind' .. hlgroup, { fg = cs[color] })
-  end
+  link('Boolean', 'CmpItemKindBoolean')
+  link('Constant', 'CmpItemKindConstant')
+  link('Function', 'CmpItemKindFunction')
+  link('Keyword', 'CmpItemKindKeyword')
+  link('Namespace', 'CmpItemKindNamespace')
+  link('Number', 'CmpItemKindNumber')
+  link('Operator', 'CmpItemKindOperator')
+  link('String', 'CmpItemKindString')
+  link('Type', 'CmpItemKindClass')
+  link('Type', 'CmpItemKindEnum')
+  link('Type', 'CmpItemKindInterface')
+  link('Type', 'CmpItemKindStruct')
+  link('Type', 'CmpItemKindConstructor')
+  link('Type', 'CmpItemKindTypeParameter')
+  link('Function', 'CmpItemKindMethod')
+  link('Normal', 'CmpItemKindVariable')
+  link('Normal', 'CmpItemKindProperty')
+  link('Normal', 'CmpItemKindField')
+  link('Normal', 'CmpItemKindText')
+  link('Normal', 'CmpItemKindFile')
+  link('String', 'CmpItemKindKey')
+  link('Directory', 'CmpItemKindFolder')
+  link('Constant', 'CmpItemKindNull')
 
   link('NormalFloat', 'NullLsInfoBorder')
 

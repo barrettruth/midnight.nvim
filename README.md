@@ -22,6 +22,6 @@ Install with any package manager of your choice. For example, with
 
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp),
+  [blink.cmp](https://github.com/saghen/blink.cmp)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [blink.cmp](https://github.com/saghen/blink.cmp)
