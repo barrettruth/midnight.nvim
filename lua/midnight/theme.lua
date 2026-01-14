@@ -57,10 +57,6 @@ function M.apply()
   local palette = require('midnight.palette')
   local cs = palette.get_palette()
 
-  for color, hexcode in pairs(cs) do
-    hi(color, { fg = hexcode })
-  end
-
   hi(
     'Normal',
     { fg = cs.white, bg = cs.black },
