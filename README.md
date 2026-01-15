@@ -25,3 +25,12 @@ Install with any package manager of your choice. For example, with
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp),
   [blink.cmp](https://github.com/saghen/blink.cmp)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+
+## Motivation
+
+I find existing colorschemes to generally be excessively colorful and
+distracting, rather than informative. I wrote midnight.nvim to focus on code
+structure, specifically for competitive programming and workplace software
+development environments. I included highlighting of constants (e.g. strings,
+numbers, booleans) and language keywords to emphasize the maximally important
+aspects of code and its structure, respectively.
