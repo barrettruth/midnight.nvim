@@ -28,4 +28,9 @@ Install with any package manager of your choice. For example, with
 
 ## Motivation
 
-I find existing colorschemes to generally be excessively colorful and distracting, rather than informative. I wrote midnight.nvim to focus on code structure, specifically for competitive programming and workplace software development environments. I included highlighting of constants (e.g. strings, numbers, booleans) and language keywords to emphasize the maximally important aspects of code and its structure, respectively.
+I find existing colorschemes to generally be excessively colorful and
+distracting, rather than informative. I wrote midnight.nvim to focus on code
+structure, specifically for competitive programming and workplace software
+development environments. I included highlighting of constants (e.g. strings,
+numbers, booleans) and language keywords to emphasize the maximally important
+aspects of code and its structure, respectively.
