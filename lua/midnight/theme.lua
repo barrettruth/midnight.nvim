@@ -114,10 +114,10 @@ function M.apply()
   hi('@text.underline', { underline = true })
   hi('@text.uri', { fg = cs.white, underline = true }, { '@text.reference' })
 
-  hi('@text.danger', { fg = cs.red, bold = true, italic = true })
-  hi('@text.note', { fg = cs.green, bold = true, italic = true })
-  hi('@text.todo', { fg = cs.yellow, bold = true, italic = true }, { 'Todo' })
-  hi('@text.warning', { fg = cs.yellow, bold = true, italic = true })
+  hi('@comment.danger', { fg = cs.red, bold = true, italic = true })
+  hi('@comment.note', { fg = cs.blue, bold = true, italic = true })
+  hi('@comment.todo', { fg = cs.yellow, bold = true, italic = true }, { 'Todo' })
+  hi('@comment.warning', { fg = cs.yellow, bold = true, italic = true })
 
   hi('@variable', { none = true })
 
