@@ -115,7 +115,7 @@ function M.apply()
   hi('@text.uri', { fg = cs.white, underline = true }, { '@text.reference' })
 
   hi('@comment.danger', { fg = cs.red, bold = true, italic = true })
-  hi('@comment.note', { fg = cs.green, bold = true, italic = true })
+  hi('@comment.note', { fg = cs.blue, bold = true, italic = true })
   hi('@comment.todo', { fg = cs.yellow, bold = true, italic = true }, { 'Todo' })
   hi('@comment.warning', { fg = cs.yellow, bold = true, italic = true })
 
