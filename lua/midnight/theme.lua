@@ -149,6 +149,7 @@ function M.apply()
   hi('DiffAdd', { fg = cs.green }, { '@text.diff.add', 'diffAdded' })
   hi('DiffDelete', { fg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
   hi('DiffChange', { fg = cs.yellow })
+  hi('DiffText', { fg = cs.foreground, bg = cs.blue })
 
   hi('@constructor.lua', { fg = cs.background })
   hi('@markup.heading.gitcommit', { none = true })
