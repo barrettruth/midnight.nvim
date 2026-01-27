@@ -59,7 +59,7 @@ function M.apply()
 
   hi(
     'Normal',
-    { fg = cs.white, bg = cs.black },
+    { fg = cs.background, bg = cs.foreground },
     { 'Identifier', 'Special', 'StatusLine', 'StatusLineNC', 'Winbar', 'WinbarNC' }
   )
   hi('NonText', { fg = cs.grey }, { 'SpecialKey' })
@@ -68,13 +68,13 @@ function M.apply()
   hi('CursorLine', { bg = cs.dark_grey }, { 'ColorColumn', 'Folded', 'Visual' })
   hi('CursorLineNr', { fg = cs.medium_emphasis })
 
-  hi('Conceal', { fg = cs.light_black, bg = cs.black })
+  hi('Conceal', { fg = cs.light_black, bg = cs.foreground })
   hi('Directory', { fg = cs.blue })
   hi('Error', { fg = cs.red })
   hi('ErrorMsg', { bold = true, underline = true, fg = cs.red })
   hi('MoreMsg', { fg = cs.yellow }, { 'WarningMsg' })
   hi('MatchParen', { bg = cs.med_grey })
-  hi('NormalFloat', { bg = cs.black }, {
+  hi('NormalFloat', { bg = cs.foreground }, {
     'LspInfoBorder',
     'FloatBorder',
     'FloatShadow',
@@ -87,32 +87,32 @@ function M.apply()
   tshi('Comment', { fg = cs.light_black })
   tshi('Constant', { fg = cs.green })
   tshi('Define', { fg = cs.blue })
-  tshi('Function', { fg = cs.white }, { '@function.builtin', '@function.macro' })
+  tshi('Function', { fg = cs.background }, { '@function.builtin', '@function.macro' })
   tshi('Include', { fg = cs.blue })
   tshi('Keyword', { fg = cs.blue }, { 'Statement' })
-  tshi('Namespace', { fg = cs.white })
+  tshi('Namespace', { fg = cs.background })
   tshi('Number', { fg = cs.green })
-  tshi('Operator', { fg = cs.white }, { '@keyword.operator', '@conditional.ternary' })
+  tshi('Operator', { fg = cs.background }, { '@keyword.operator', '@conditional.ternary' })
   hi('Delimiter', { none = true })
-  hi('@punctuation.delimiter', { fg = cs.white })
+  hi('@punctuation.delimiter', { fg = cs.background })
   tshi('PreProc', { fg = cs.blue })
   tshi('String', { fg = cs.green }, { '@character' })
   hi('@string.escape', { fg = cs.green })
-  tshi('Title', { bold = true, fg = cs.white })
+  tshi('Title', { bold = true, fg = cs.background })
 
-  hi('@tag', { fg = cs.white })
-  hi('@tag.attribute', { fg = cs.white })
-  hi('@tag.delimiter', { fg = cs.white })
+  hi('@tag', { fg = cs.background })
+  hi('@tag.attribute', { fg = cs.background })
+  hi('@tag.delimiter', { fg = cs.background })
 
-  tshi('Type', { fg = cs.white })
-  hi('@type.qualifier', { fg = cs.white }, { '@storageclass' })
-  hi('@lsp.type.enum', { fg = cs.white }, { '@lsp.type.class' })
+  tshi('Type', { fg = cs.background })
+  hi('@type.qualifier', { fg = cs.background }, { '@storageclass' })
+  hi('@lsp.type.enum', { fg = cs.background }, { '@lsp.type.class' })
   hi('@lsp.type.comment', { none = true }, { '@lsp.type.macro' })
 
   hi('@text.emphasis', { italic = true })
   hi('@text.strong', { bold = true })
   hi('@text.underline', { underline = true })
-  hi('@text.uri', { fg = cs.white, underline = true }, { '@text.reference' })
+  hi('@text.uri', { fg = cs.background, underline = true }, { '@text.reference' })
 
   hi('@comment.danger', { fg = cs.red, bold = true, italic = true })
   hi('@comment.note', { fg = cs.blue, bold = true, italic = true })
@@ -139,18 +139,18 @@ function M.apply()
   hi('DiagnosticUnderlineInfo', { undercurl = true, special = cs.light_black })
 
   hi('SpellBad', { underline = true, special = cs.red })
-  hi('SpellRare', { underline = true, special = cs.white })
-  hi('SpellCap', { underline = true, special = cs.white })
-  hi('SpellLocal', { underline = true, special = cs.white })
+  hi('SpellRare', { underline = true, special = cs.background })
+  hi('SpellCap', { underline = true, special = cs.background })
+  hi('SpellLocal', { underline = true, special = cs.background })
 
-  hi('gitCommitSummary', { fg = cs.white })
+  hi('gitCommitSummary', { fg = cs.background })
 
-  hi('@attribute.diff', { fg = cs.white })
+  hi('@attribute.diff', { fg = cs.background })
   hi('DiffAdd', { fg = cs.green }, { '@text.diff.add', 'diffAdded' })
   hi('DiffDelete', { fg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
   hi('DiffChange', { fg = cs.yellow })
 
-  hi('@constructor.lua', { fg = cs.white })
+  hi('@constructor.lua', { fg = cs.background })
   hi('@markup.heading.gitcommit', { none = true })
 
   hi('GitSignsCurrentLineBlame', { italic = true, fg = cs.light_black })
@@ -162,9 +162,9 @@ function M.apply()
 
   link('Pmenu', 'CmpPmenu')
   link('PmenuSel', 'CmpPmenuSel')
-  hi('CmpItemAbbr', { fg = cs.white })
-  hi('CmpItemAbbrMatch', { fg = cs.white, bold = true })
-  hi('CmpItemAbbrMatchFuzzy', { fg = cs.white, bold = true })
+  hi('CmpItemAbbr', { fg = cs.background })
+  hi('CmpItemAbbrMatch', { fg = cs.background, bold = true })
+  hi('CmpItemAbbrMatchFuzzy', { fg = cs.background, bold = true })
   hi('CmpItemAbbrDeprecated', { fg = cs.light_black, strikethrough = true })
   hi('CmpItemMenu', { fg = cs.light_black })
 
@@ -215,18 +215,18 @@ function M.apply()
   link('Directory', 'OilDir')
 
   link('NormalFloat', 'FzfLuaBorder')
-  hi('FzfLuaHeaderText', { fg = cs.white }, { 'FzfLuaBufFlagCur' })
-  hi('FzfLuaBufFlagAlt', { fg = cs.white })
+  hi('FzfLuaHeaderText', { fg = cs.background }, { 'FzfLuaBufFlagCur' })
+  hi('FzfLuaBufFlagAlt', { fg = cs.background })
   link('Normal', 'FzfLuaLivePrompt')
 
-  vim.g.terminal_color_0 = cs.black
+  vim.g.terminal_color_0 = cs.foreground
   vim.g.terminal_color_1 = cs.red
   vim.g.terminal_color_2 = cs.green
   vim.g.terminal_color_3 = cs.yellow
   vim.g.terminal_color_4 = cs.blue
   vim.g.terminal_color_5 = cs.magenta
   vim.g.terminal_color_6 = cs.cyan
-  vim.g.terminal_color_7 = cs.white
+  vim.g.terminal_color_7 = cs.background
   vim.g.terminal_color_8 = cs.bright_black
   vim.g.terminal_color_9 = cs.bright_red
   vim.g.terminal_color_10 = cs.bright_green

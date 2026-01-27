@@ -1,7 +1,7 @@
 local M = {}
 
 ---@class Palette
----@field black string
+---@field foreground string
 ---@field red string
 ---@field green string
 ---@field yellow string
@@ -9,7 +9,7 @@ local M = {}
 ---@field magenta string
 ---@field cyan string
 ---@field orange? string
----@field white string
+---@field background string
 ---@field bright_black string
 ---@field bright_red string
 ---@field bright_green string
@@ -34,7 +34,7 @@ local M = {}
 
 ---@type Palette
 M.midnight = {
-  black = '#121212',
+  foreground = '#121212',
   red = '#ff6b6b',
   green = '#98c379',
   yellow = '#e5c07b',
@@ -42,7 +42,7 @@ M.midnight = {
   magenta = '#c678dd',
   cyan = '#56b6c2',
   orange = '#e5a56b',
-  white = '#e0e0e0',
+  background = '#e0e0e0',
 
   bright_black = '#666666',
   bright_red = '#f48771',
@@ -63,7 +63,7 @@ M.midnight = {
 
 ---@type Palette
 M.daylight = {
-  black = '#f5f5f5',
+  foreground = '#f5f5f5',
   red = '#c7254e',
   green = '#2d7f3e',
   yellow = '#996800',
@@ -71,7 +71,7 @@ M.daylight = {
   magenta = '#ae3ec9',
   cyan = '#1098ad',
   orange = '#d9730d',
-  white = '#1a1a1a',
+  background = '#1a1a1a',
 
   bright_black = '#999999',
   bright_red = '#e03e52',
