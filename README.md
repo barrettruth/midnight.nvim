@@ -11,7 +11,7 @@ Install with any package manager of your choice. For example, with
 
 ```lua
 {
-  'barrett-ruth/midnight.nvim',
+  'barrettruth/midnight.nvim',
   config = function()
     vim.cmd.colorscheme('midnight')
   end,

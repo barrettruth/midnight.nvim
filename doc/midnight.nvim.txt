@@ -16,7 +16,7 @@ INSTALLATION                                           *midnight-installation*
 
 >lua
     {
-      'barrett-ruth/midnight.nvim',
+      'barrettruth/midnight.nvim',
       config = function()
         vim.cmd.colorscheme('midnight')
       end,
