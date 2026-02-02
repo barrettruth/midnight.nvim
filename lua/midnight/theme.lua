@@ -146,9 +146,9 @@ function M.apply()
   hi('gitCommitSummary', { fg = cs.background })
 
   hi('@attribute.diff', { fg = cs.background })
-  hi('DiffAdd', { bg = cs.green }, { '@text.diff.add', 'diffAdded' })
-  hi('DiffDelete', { bg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
-  hi('DiffChange', { bg = cs.yellow })
+  hi('DiffAdd', { bg = cs.diff_add, fg = cs.green }, { '@text.diff.add', 'diffAdded' })
+  hi('DiffDelete', { bg = cs.diff_delete, fg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
+  hi('DiffChange', { bg = cs.diff_change, fg = cs.yellow })
   hi('DiffText', { fg = cs.foreground, bg = cs.blue })
 
   hi('@constructor.lua', { fg = cs.background })

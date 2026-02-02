@@ -1,5 +1,22 @@
 local M = {}
 
+---@param hex string
+---@param bg_hex string
+---@param alpha number
+---@return string
+function M.blend(hex, bg_hex, alpha)
+  local function parse(h)
+    h = h:gsub('#', '')
+    return tonumber(h:sub(1, 2), 16), tonumber(h:sub(3, 4), 16), tonumber(h:sub(5, 6), 16)
+  end
+  local r, g, b = parse(hex)
+  local bg_r, bg_g, bg_b = parse(bg_hex)
+  local blend_r = math.floor(r * alpha + bg_r * (1 - alpha))
+  local blend_g = math.floor(g * alpha + bg_g * (1 - alpha))
+  local blend_b = math.floor(b * alpha + bg_b * (1 - alpha))
+  return string.format('#%02x%02x%02x', blend_r, blend_g, blend_b)
+end
+
 ---@class Palette
 ---@field foreground string
 ---@field red string
@@ -31,6 +48,9 @@ local M = {}
 ---@field light_cyan? string
 ---@field light_white? string
 ---@field medium_emphasis? string
+---@field diff_add? string
+---@field diff_delete? string
+---@field diff_change? string
 
 ---@type Palette
 M.midnight = {
@@ -59,6 +79,15 @@ M.midnight = {
   dark_grey = '#222222',
 
   medium_emphasis = '#999999',
+
+  -- Diff backgrounds: base color blended at 40% with visual bg (#121212)
+  -- Generated via: M.blend(base_color, '#121212', 0.4)
+  -- diff_add = M.blend('#98c379', '#121212', 0.4)    -- green
+  -- diff_delete = M.blend('#ff6b6b', '#121212', 0.4) -- red
+  -- diff_change = M.blend('#e5c07b', '#121212', 0.4) -- yellow
+  diff_add = '#0c2f1e',
+  diff_delete = '#291f27',
+  diff_change = '#66583c',
 }
 
 ---@type Palette
@@ -88,6 +117,12 @@ M.daylight = {
   dark_grey = '#ebebeb',
 
   medium_emphasis = '#666666',
+
+  -- Diff backgrounds: base color blended at 40% with visual bg (#f5f5f5)
+  -- Generated via: M.blend(base_color, '#f5f5f5', 0.4)
+  diff_add = '#a5c5ab',
+  diff_delete = '#e2a1b2',
+  diff_change = '#d0bc93',
 }
 
 ---@return Palette
