@@ -84,10 +84,10 @@ M.midnight = {
   -- Generated via: M.blend(base_color, '#121212', 0.4)
   -- diff_add = M.blend('#98c379', '#121212', 0.4)    -- green
   -- diff_delete = M.blend('#ff6b6b', '#121212', 0.4) -- red
-  -- diff_change = M.blend('#e5c07b', '#121212', 0.4) -- yellow
+  -- diff_change = M.blend('#7aa2f7', '#121212', 0.4) -- blue
   diff_add = '#0c2f1e',
   diff_delete = '#291f27',
-  diff_change = '#66583c',
+  diff_change = '#3a4a6d',
 }
 
 ---@type Palette
@@ -122,7 +122,7 @@ M.daylight = {
   -- Generated via: M.blend(base_color, '#f5f5f5', 0.4)
   diff_add = '#a5c5ab',
   diff_delete = '#e2a1b2',
-  diff_change = '#d0bc93',
+  diff_change = '#a9b7e5',
 }
 
 ---@return Palette
