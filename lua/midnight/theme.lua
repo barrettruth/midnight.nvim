@@ -65,7 +65,7 @@ function M.apply()
   hi('NonText', { fg = cs.grey }, { 'SpecialKey' })
 
   hi('LineNr', { fg = cs.light_black }, { 'SignColumn' })
-  hi('CursorLine', { bg = cs.dark_grey }, { 'ColorColumn', 'Folded', 'Visual' })
+  hi('CursorLine', { bg = cs.dark_grey, underline = false }, { 'ColorColumn', 'Folded', 'Visual' })
   hi('CursorLineNr', { fg = cs.medium_emphasis })
 
   hi('Conceal', { fg = cs.light_black, bg = cs.foreground })
