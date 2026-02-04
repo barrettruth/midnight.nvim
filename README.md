@@ -6,7 +6,8 @@ Neovim theme for code, not colors.
 
 ## Installation
 
-Install using your package manager of choice or via [luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
+Install using your package manager of choice or via
+[luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
 
 ```
 luarocks install midnight.nvim
@@ -18,7 +19,7 @@ Then set the colorscheme:
 vim.cmd.colorscheme('midnight')
 ```
 
-## Plugin Integration
+## Plugin Integrations
 
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
