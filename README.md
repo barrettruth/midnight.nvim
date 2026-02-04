@@ -1,21 +1,21 @@
 # midnight.nvim
 
-neovim theme for code, not colors.
+Neovim theme for code, not colors.
 
 ![Image](https://github.com/user-attachments/assets/9abb5126-15d7-4de4-ad6d-ec35975fec03)
 
 ## Installation
 
-Install with any package manager of your choice. For example, with
-[lazy.nvim](https://github.com/folke/lazy.nvim):
+Install using your package manager of choice or via [luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
+
+```
+luarocks install midnight.nvim
+```
+
+Then set the colorscheme:
 
 ```lua
-{
-  'barrettruth/midnight.nvim',
-  config = function()
-    vim.cmd.colorscheme('midnight')
-  end,
-}
+vim.cmd.colorscheme('midnight')
 ```
 
 ## Plugin Integration
