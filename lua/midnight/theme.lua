@@ -145,7 +145,10 @@ function M.apply()
 
   hi('gitCommitSummary', { fg = cs.background })
 
-  hi('@attribute.diff', { fg = cs.background })
+  hi('@attribute.diff', { fg = cs.blue })
+  hi('@diff.minus', { fg = cs.red })
+  hi('@diff.plus', { fg = cs.green })
+  link('Normal', { '@string.special.path', '@variable.parameter' })
   hi('DiffAdd', { bg = cs.diff_add, fg = cs.green }, { '@text.diff.add', 'diffAdded' })
   hi('DiffDelete', { bg = cs.diff_delete, fg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
   hi('DiffChange', { bg = cs.diff_change, fg = cs.blue })
