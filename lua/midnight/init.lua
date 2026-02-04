@@ -17,4 +17,17 @@ function M.load()
   theme.apply()
 end
 
+---@deprecated Use `vim.cmd('colorscheme midnight')` instead
+function M.setup(_opts)
+  vim.deprecate(
+    'require("midnight").setup()',
+    'vim.cmd("colorscheme midnight")',
+    'v0.1.0',
+    'midnight.nvim',
+    false
+  )
+
+  M.load()
+end
+
 return M
