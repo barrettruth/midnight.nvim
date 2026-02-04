@@ -18,7 +18,7 @@ function M.load()
 end
 
 ---@deprecated Use `vim.cmd('colorscheme midnight')` instead
-function M.setup(opts)
+function M.setup(_opts)
   vim.deprecate(
     'require("midnight").setup()',
     'vim.cmd("colorscheme midnight")',
