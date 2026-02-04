@@ -1,2 +1,1 @@
-vim.o.background = 'dark'
 require('midnight').load()
