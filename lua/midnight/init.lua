@@ -1,7 +1,12 @@
 local M = {}
 
+local loading = false
+
 ---@return nil
 function M.load()
+  if loading then return end
+  loading = true
+
   if vim.g.colors_name then
     vim.cmd('hi clear')
   end
@@ -15,6 +20,8 @@ function M.load()
 
   local theme = require('midnight.theme')
   theme.apply()
+
+  loading = false
 end
 
 ---@deprecated Use `vim.cmd('colorscheme midnight')` instead
