@@ -168,9 +168,9 @@ function M.apply()
   hi('@function.latex', { fg = cs.blue })
 
   hi('GitSignsCurrentLineBlame', { italic = true, fg = cs.light_black })
-  link('DiffAdd', 'GitSignsAdd')
-  link('DiffChange', 'GitSignsChange')
-  link('DiffDelete', 'GitSignsDelete')
+  hi('GitSignsAdd', { fg = cs.green })
+  hi('GitSignsChange', { fg = cs.blue })
+  hi('GitSignsDelete', { fg = cs.red })
 
   link('Search', 'HighlightUndo')
 
