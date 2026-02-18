@@ -4,7 +4,9 @@ local loading = false
 
 ---@return nil
 function M.load()
-  if loading then return end
+  if loading then
+    return
+  end
   loading = true
 
   if vim.g.colors_name then

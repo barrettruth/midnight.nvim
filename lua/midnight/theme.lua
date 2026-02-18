@@ -165,6 +165,8 @@ function M.apply()
   hi('@constructor.lua', { fg = cs.background })
   hi('@markup.heading.gitcommit', { none = true })
 
+  hi('@function.latex', { fg = cs.blue })
+
   hi('GitSignsCurrentLineBlame', { italic = true, fg = cs.light_black })
   link('DiffAdd', 'GitSignsAdd')
   link('DiffChange', 'GitSignsChange')
