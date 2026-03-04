@@ -4,5 +4,6 @@
   "diagnostics.globals": ["vim"],
   "workspace.library": ["$VIMRUNTIME/lua", "${3rd}/luv/library"],
   "workspace.checkThirdParty": false,
+  "workspace.ignoreDir": [".direnv"],
   "completion.callSnippet": "Replace"
 }
