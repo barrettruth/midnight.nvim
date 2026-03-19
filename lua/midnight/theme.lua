@@ -81,6 +81,7 @@ function M.apply()
     'FloatShadowThrough',
   })
   hi('Search', { reverse = true }, { 'IncSearch' })
+  hi('CurSearch', { fg = cs.blue, reverse = true })
   hi('Whitespace', { fg = cs.grey })
 
   tshi('Boolean', { fg = cs.green }, { '@constant.builtin' })
