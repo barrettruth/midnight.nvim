@@ -9,7 +9,7 @@ on:
 jobs:
   publish-luarocks:
     name: Publish to LuaRocks
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, netcup, general]
     steps:
       - uses: actions/checkout@v4
       - name: Publish to LuaRocks
