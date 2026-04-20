@@ -80,6 +80,10 @@ function M.apply()
     'FloatShadow',
     'FloatShadowThrough',
   })
+  hi('QuickFixLine', { link = 'Normal' })
+  hi('qfFileName', { fg = cs.blue })
+  hi('qfLineNr', { fg = cs.light_black })
+  hi('qfSeparator', { fg = cs.light_black })
   hi('Search', { reverse = true }, { 'IncSearch' })
   hi('CurSearch', { fg = cs.blue, reverse = true })
   hi('Whitespace', { fg = cs.grey })
