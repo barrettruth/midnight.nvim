@@ -23,7 +23,7 @@
         default = pkgs.mkShell {
           packages = [
             pkgs.just
-            pkgs.prettier
+            pkgs.biome
             pkgs.stylua
             pkgs.selene
             pkgs.lua-language-server
@@ -34,7 +34,7 @@
         ci = pkgs.mkShell {
           packages = [
             pkgs.just
-            pkgs.prettier
+            pkgs.biome
             pkgs.stylua
             pkgs.neovim
             pkgs.selene
