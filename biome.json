@@ -25,5 +25,14 @@
       "trailingCommas": "none",
       "semicolons": "asNeeded"
     }
+  },
+  "json": {
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 80,
+      "trailingCommas": "none"
+    }
   }
 }
