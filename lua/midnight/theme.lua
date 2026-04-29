@@ -74,12 +74,8 @@ function M.apply()
   hi('ErrorMsg', { bold = true, underline = true, fg = cs.red })
   hi('MoreMsg', { fg = cs.yellow }, { 'WarningMsg' })
   hi('MatchParen', { bg = cs.med_grey })
-  hi('NormalFloat', { bg = cs.foreground }, {
-    'LspInfoBorder',
-    'FloatBorder',
-    'FloatShadow',
-    'FloatShadowThrough',
-  })
+  hi('NormalFloat', { bg = cs.foreground }, { 'FloatShadow', 'FloatShadowThrough' })
+  hi('FloatBorder', { fg = cs.background, bg = cs.foreground }, { 'LspInfoBorder' })
   hi('QuickFixLine', { link = 'Normal' })
   hi('qfFileName', { fg = cs.blue })
   hi('qfLineNr', { fg = cs.light_black })
@@ -127,6 +123,7 @@ function M.apply()
   hi('@variable', { none = true })
 
   hi('Pmenu', { fg = cs.background, bg = cs.foreground }, { 'PmenuSbar' })
+  hi('PmenuBorder', { fg = cs.background, bg = cs.foreground })
   hi('PmenuSel', { bg = cs.med_grey })
   hi('PmenuThumb', { bg = cs.grey })
   hi('BlinkCmpMenu', { fg = cs.background, bg = cs.foreground })
@@ -250,11 +247,11 @@ function M.apply()
   })
   link('Directory', { 'CmpItemKindFolder', 'BlinkCmpKindFolder' })
 
-  link('NormalFloat', 'NullLsInfoBorder')
+  link('FloatBorder', 'NullLsInfoBorder')
 
   link('Directory', 'OilDir')
 
-  link('NormalFloat', 'FzfLuaBorder')
+  link('FloatBorder', 'FzfLuaBorder')
   hi('FzfLuaHeaderText', { fg = cs.background }, { 'FzfLuaBufFlagCur' })
   hi('FzfLuaBufFlagAlt', { fg = cs.background })
   link('Normal', 'FzfLuaLivePrompt')
