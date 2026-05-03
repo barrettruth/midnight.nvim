@@ -6,8 +6,15 @@ Neovim theme for code, not colors.
 
 ## Installation
 
-Install using your package manager of choice or via
-[luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
+With `vim.pack` (Neovim 0.12+):
+
+```lua
+vim.pack.add({
+  'https://git.barrettruth.com/barrettruth/midnight.nvim',
+})
+```
+
+Or via [luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
 
 ```
 luarocks install midnight.nvim

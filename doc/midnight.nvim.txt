@@ -14,13 +14,16 @@ midnight.nvim is a minimalist colorscheme with two variants:
 ==============================================================================
 INSTALLATION                                           *midnight-installation*
 
->lua
-    {
-      url = 'https://git.barrettruth.com/barrettruth/midnight.nvim',
-      config = function()
-        vim.cmd.colorscheme('midnight')
-      end,
-    }
+With vim.pack (Neovim 0.12+): >lua
+    vim.pack.add({
+      'https://git.barrettruth.com/barrettruth/midnight.nvim',
+    })
+<
+With luarocks: >sh
+    luarocks install midnight.nvim
+<
+Then set the colorscheme: >lua
+    vim.cmd.colorscheme('midnight')
 <
 
 ==============================================================================
