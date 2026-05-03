@@ -16,7 +16,7 @@ INSTALLATION                                           *midnight-installation*
 
 >lua
     {
-      'barrettruth/midnight.nvim',
+      url = 'https://git.barrettruth.com/barrettruth/midnight.nvim',
       config = function()
         vim.cmd.colorscheme('midnight')
       end,
