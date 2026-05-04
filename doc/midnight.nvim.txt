@@ -1,7 +1,6 @@
 *midnight.nvim.txt*        Neovim theme for code, not colors
 
-Author:  Barrett Ruth <br.barrettruth@gmail.com>
-License: Same terms as Vim itself (see |license|)
+Author:  Barrett Ruth <br@barrettruth.com> License: GPL-3.0
 
 ==============================================================================
 INTRODUCTION                                                   *midnight.nvim*
@@ -18,11 +17,9 @@ With vim.pack (Neovim 0.12+): >lua
     vim.pack.add({
       'https://git.barrettruth.com/barrettruth/midnight.nvim',
     })
-<
-With luarocks: >sh
+< With luarocks: >sh
     luarocks install midnight.nvim
-<
-Then set the colorscheme: >lua
+< Then set the colorscheme: >lua
     vim.cmd.colorscheme('midnight')
 <
 
@@ -33,7 +30,7 @@ COLORSCHEMES                                           *midnight-colorschemes*
 :colorscheme daylight                                   *daylight* *:daylight*
 
 ==============================================================================
-PLUGIN INTEGRATION                                     *midnight-integration*
+PLUGIN INTEGRATION                                      *midnight-integration*
 
 Built-in support for:
     • nvim-treesitter
@@ -43,7 +40,7 @@ Built-in support for:
     • gitsigns.nvim
 
 ==============================================================================
-PALETTE                                                       *midnight-palette*
+PALETTE                                                     *midnight-palette*
 
 midnight ~
     black: #121212    red: #ff6b6b       green: #98c379    yellow: #e5c07b
