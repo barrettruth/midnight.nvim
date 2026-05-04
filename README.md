@@ -5,6 +5,7 @@ Neovim theme for code, not colors.
 > [!NOTE]
 > Due to GitHub's historic unreliability, development, issues, and pull requests
 > have moved to [Forgejo](https://git.barrettruth.com/barrettruth/midnight.nvim).
+> See `:help midnight.nvim-forgejo` for canonical project links.
 
 ![Image](https://github.com/user-attachments/assets/9abb5126-15d7-4de4-ad6d-ec35975fec03)
 

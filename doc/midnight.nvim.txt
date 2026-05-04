@@ -24,6 +24,15 @@ With vim.pack (Neovim 0.12+): >lua
 <
 
 ==============================================================================
+FORGEJO                                                *midnight.nvim-forgejo*
+
+Due to GitHub's historic unreliability, development, issues, and pull requests
+have moved to: >
+    https://git.barrettruth.com/barrettruth/midnight.nvim
+<
+Use Forgejo for documentation, issues, pull requests, and active development.
+
+==============================================================================
 COLORSCHEMES                                           *midnight-colorschemes*
 
 :colorscheme midnight                                   *midnight* *:midnight*
