@@ -1,9 +1,9 @@
-*midnight.nvim.txt*        Neovim theme for code, not colors
+*midnight.txt* *midnight.nvim.txt*        Neovim theme for code, not colors
 
 Author:  Barrett Ruth <br@barrettruth.com> License: GPL-3.0
 
 ==============================================================================
-INTRODUCTION                                                   *midnight.nvim*
+INTRODUCTION                                        *midnight* *midnight.nvim*
 
 midnight.nvim is a minimalist colorscheme with two variants:
 
@@ -26,7 +26,7 @@ With vim.pack (Neovim 0.12+): >lua
 ==============================================================================
 COLORSCHEMES                                           *midnight-colorschemes*
 
-:colorscheme midnight                                   *midnight* *:midnight*
+:colorscheme midnight                                             *:midnight*
 :colorscheme daylight                                   *daylight* *:daylight*
 
 ==============================================================================

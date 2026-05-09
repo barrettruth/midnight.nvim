@@ -31,6 +31,12 @@ Then set the colorscheme:
 vim.cmd.colorscheme('midnight')
 ```
 
+## Documentation
+
+```vim
+:help midnight
+```
+
 ## Plugin Integrations
 
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
