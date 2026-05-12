@@ -154,14 +154,14 @@ function M.apply()
   hi('gitCommitSummary', { fg = cs.background })
 
   hi('@attribute.diff', { fg = cs.blue })
-  hi('@diff.minus', { fg = cs.red })
-  hi('@diff.plus', { fg = cs.green })
+  hi('Added', { fg = cs.green }, { '@diff.plus', '@text.diff.add', 'diffAdded' })
+  hi('Removed', { fg = cs.red }, { '@diff.minus', '@text.diff.delete', 'diffRemoved' })
   hi('@diff.delta', { fg = cs.blue })
   hi('@punctuation.special.diff', { fg = cs.blue })
 
   link('Normal', { '@string.special.path', '@variable.parameter' })
-  hi('DiffAdd', { bg = cs.diff_add, fg = cs.green }, { '@text.diff.add', 'diffAdded' })
-  hi('DiffDelete', { bg = cs.diff_delete, fg = cs.red }, { '@text.diff.delete', 'diffRemoved' })
+  hi('DiffAdd', { bg = cs.diff_add, fg = cs.green })
+  hi('DiffDelete', { bg = cs.diff_delete, fg = cs.red })
   hi('DiffChange', { bg = cs.diff_change, fg = cs.blue })
   hi('DiffText', { bg = cs.blue, fg = cs.foreground })
 
