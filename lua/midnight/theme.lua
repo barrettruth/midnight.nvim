@@ -57,10 +57,13 @@ function M.apply()
   local palette = require('midnight.palette')
   local cs = palette.get_palette()
 
+  hi('Normal', { fg = cs.background, bg = cs.foreground })
+  hi('Identifier', { fg = cs.background })
+  hi('Special', { fg = cs.background })
   hi(
-    'Normal',
+    'StatusLine',
     { fg = cs.background, bg = cs.foreground },
-    { 'Identifier', 'Special', 'StatusLine', 'StatusLineNC', 'Winbar', 'WinbarNC' }
+    { 'StatusLineNC', 'Winbar', 'WinbarNC' }
   )
   hi('NonText', { fg = cs.grey }, { 'SpecialKey' })
 
@@ -160,7 +163,8 @@ function M.apply()
   hi('@diff.delta', { fg = cs.blue })
   hi('@punctuation.special.diff', { fg = cs.blue })
 
-  link('Normal', { '@string.special.path', '@variable.parameter' })
+  hi('@string.special.path', { fg = cs.background })
+  hi('@variable.parameter', { fg = cs.background })
   hi('DiffAdd', { bg = cs.diff_add, fg = cs.green })
   hi('DiffDelete', { bg = cs.diff_delete, fg = cs.red })
   hi('DiffChange', { bg = cs.diff_change, fg = cs.blue })

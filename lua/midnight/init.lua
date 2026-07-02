@@ -2,12 +2,16 @@ local M = {}
 
 local loading = false
 
+---@param name? 'midnight'|'daylight'
 ---@return nil
-function M.load()
+function M.load(name)
   if loading then
     return
   end
   loading = true
+
+  name = name or 'midnight'
+  vim.o.background = name == 'daylight' and 'light' or 'dark'
 
   if vim.g.colors_name then
     vim.cmd('hi clear')
@@ -18,7 +22,7 @@ function M.load()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'midnight'
+  vim.g.colors_name = name
 
   local theme = require('midnight.theme')
   theme.apply()

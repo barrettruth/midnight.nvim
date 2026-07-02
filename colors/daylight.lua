@@ -1,1 +1,1 @@
-require('midnight').load()
+require('midnight').load('daylight')
