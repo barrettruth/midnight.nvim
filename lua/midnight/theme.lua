@@ -106,6 +106,7 @@ function M.apply()
   hi('@tag.delimiter', { fg = cs.background })
 
   tshi('Type', { fg = cs.background })
+  link('Type', '@type.builtin')
   hi('@type.qualifier', { fg = cs.background }, { '@storageclass' })
   hi('@lsp.type.enum', { fg = cs.background }, { '@lsp.type.class' })
   hi('@lsp.type.comment', { none = true }, { '@lsp.type.macro' })
