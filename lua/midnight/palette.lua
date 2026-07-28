@@ -25,7 +25,6 @@ end
 ---@field blue string
 ---@field magenta string
 ---@field cyan string
----@field orange? string
 ---@field background string
 ---@field bright_black string
 ---@field bright_red string
@@ -61,7 +60,6 @@ M.midnight = {
   blue = '#7aa2f7',
   magenta = '#c678dd',
   cyan = '#56b6c2',
-  orange = '#e5a56b',
   background = '#e0e0e0',
 
   bright_black = '#666666',
@@ -99,7 +97,6 @@ M.daylight = {
   blue = '#3b5bdb',
   magenta = '#ae3ec9',
   cyan = '#1098ad',
-  orange = '#d9730d',
   background = '#1a1a1a',
 
   bright_black = '#999999',
