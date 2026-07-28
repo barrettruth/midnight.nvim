@@ -59,7 +59,7 @@ function M.apply()
 
   hi('Normal', { fg = cs.background, bg = cs.foreground })
   hi('Identifier', { fg = cs.background })
-  hi('Special', { fg = cs.background })
+  hi('Special', { fg = cs.magenta })
   hi(
     'StatusLine',
     { fg = cs.background, bg = cs.foreground },
