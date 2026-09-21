@@ -9,7 +9,7 @@ body:
       options:
         - label:
             I have searched [existing
-            issues](https://git.barrettruth.com/barrettruth/midnight.nvim/issues)
+            issues](https://forge.barrettruth.com/barrettruth/midnight.nvim/issues)
           required: true
 
   - type: textarea
