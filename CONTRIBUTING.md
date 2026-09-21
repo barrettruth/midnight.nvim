@@ -1,7 +1,7 @@
 # Contributing
 
 Development, issues, and pull requests happen on
-[Forgejo](https://git.barrettruth.com/barrettruth/midnight.nvim).
+[Forgejo](https://forge.barrettruth.com/barrettruth/midnight.nvim).
 
 ## Scope
 
