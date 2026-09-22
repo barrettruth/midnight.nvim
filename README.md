@@ -2,10 +2,6 @@
 
 Neovim theme for code, not colors.
 
-> [!NOTE]
-> Active development is hosted on
-> [Forgejo](https://forge.barrettruth.com/barrettruth/midnight.nvim).
-
 ![Image](assets/midnight.webp)
 
 ## Installation
