@@ -18,12 +18,6 @@ vim.pack.add({
 })
 ```
 
-Or via [luarocks](https://luarocks.org/modules/barrettruth/midnight.nvim):
-
-```
-luarocks install midnight.nvim
-```
-
 Then set the colorscheme:
 
 ```lua
