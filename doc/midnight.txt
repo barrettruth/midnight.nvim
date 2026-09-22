@@ -17,8 +17,6 @@ With vim.pack (Neovim 0.12+): >lua
     vim.pack.add({
       'https://forge.barrettruth.com/barrettruth/midnight.nvim',
     })
-< With luarocks: >sh
-    luarocks install midnight.nvim
 < Then set the colorscheme: >lua
     vim.cmd.colorscheme('midnight')
 <
