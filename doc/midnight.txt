@@ -24,6 +24,21 @@ With vim.pack (Neovim 0.12+): >lua
 <
 
 ==============================================================================
+MIGRATION                                                 *midnight-migration*
+
+The GitHub repository will be deleted on 2026-10-31. GitHub clones and updates
+will fail after that date.
+
+Install midnight.nvim from Forgejo: >lua
+    vim.pack.add({
+      'https://forge.barrettruth.com/barrettruth/midnight.nvim',
+    })
+< Or use LuaRocks: >sh
+    luarocks install midnight.nvim
+< A Git checkout with the GitHub repository as its `origin` remote displays a
+one-time warning when you load the colorscheme.
+
+==============================================================================
 COLORSCHEMES                                           *midnight-colorschemes*
 
 :colorscheme midnight                                              *:midnight*
