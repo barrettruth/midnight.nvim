@@ -1,13 +1,8 @@
 local M = {}
 
-local marker_name = 'github-removal-2026-10-31-v1'
-local notified = false
-
 local message = table.concat({
-  'The GitHub repository will be deleted on 2026-10-31.',
-  'GitHub clones and updates will fail after that date.',
+  '[midnight.nvim] This repository will be removed from GitHub on October 31, 2026.',
   'Install from Forgejo: https://forge.barrettruth.com/barrettruth/midnight.nvim.',
-  'LuaRocks: luarocks install midnight.nvim.',
   'See :help midnight-migration.',
 }, ' ')
 
@@ -44,28 +39,14 @@ function M.origin(root)
   return vim.trim(origin)
 end
 
----@return string
-function M.marker_path()
-  return vim.fs.joinpath(vim.fn.stdpath('state'), 'midnight.nvim', marker_name)
-end
-
 ---@param root? string
 ---@return boolean
 function M.warn_if_github_source(root)
-  if notified or vim.uv.fs_stat(M.marker_path()) then
-    return false
-  end
-
   if not M.is_github_origin(M.origin(root or M.plugin_root())) then
     return false
   end
 
-  vim.notify(message, vim.log.levels.WARN, { title = 'midnight.nvim' })
-
-  local marker = M.marker_path()
-  vim.fn.mkdir(vim.fs.dirname(marker), 'p')
-  vim.fn.writefile({ os.date('!%Y-%m-%dT%H:%M:%SZ') }, marker)
-  notified = true
+  vim.notify_once(message, vim.log.levels.WARN)
 
   return true
 end
