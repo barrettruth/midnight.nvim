@@ -3,9 +3,8 @@
 Neovim theme for code, not colors.
 
 > [!NOTE]
-> Due to GitHub's historic unreliability, active development is hosted on
+> Active development is hosted on
 > [Forgejo](https://forge.barrettruth.com/barrettruth/midnight.nvim).
-> GitHub is maintained as a read-only mirror.
 
 ![Image](https://github.com/user-attachments/assets/9abb5126-15d7-4de4-ad6d-ec35975fec03)
 
