@@ -33,9 +33,6 @@ plugin source to Forgejo: >lua
     })
 <
 
-A Git checkout with the GitHub repository as its `origin` remote displays this
-warning one time per Neovim session when you load the colorscheme.
-
 ==============================================================================
 COLORSCHEMES                                           *midnight-colorschemes*
 
