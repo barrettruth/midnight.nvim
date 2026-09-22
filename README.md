@@ -2,7 +2,7 @@
 
 Neovim theme for code, not colors.
 
-![Image](assets/midnight.webp)
+![Image](https://forge.barrettruth.com/attachments/098b9e97-62b8-4bca-9d00-980553e070e7)
 
 ## Installation
 
