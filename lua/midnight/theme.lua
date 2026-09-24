@@ -52,10 +52,11 @@ local function tshi(group, highlights, links)
   end
 end
 
+---@param name? 'midnight'|'daylight'
 ---@return nil
-function M.apply()
+function M.apply(name)
   local palette = require('midnight.palette')
-  local cs = palette.get_palette()
+  local cs = palette.get_palette(name)
 
   hi('Normal', { fg = cs.background, bg = cs.foreground })
   hi('Identifier', { fg = cs.background })

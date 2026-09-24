@@ -122,9 +122,10 @@ M.daylight = {
   diff_change = '#aab7ea',
 }
 
+---@param name? 'midnight'|'daylight'
 ---@return Palette
-function M.get_palette()
-  if vim.o.background == 'light' then
+function M.get_palette(name)
+  if name == 'daylight' or (not name and vim.o.background == 'light') then
     return M.daylight
   else
     return M.midnight

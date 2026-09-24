@@ -11,7 +11,6 @@ function M.load(name)
   loading = true
 
   name = name or 'midnight'
-  vim.o.background = name == 'daylight' and 'light' or 'dark'
 
   if vim.g.colors_name then
     vim.cmd('hi clear')
@@ -25,7 +24,7 @@ function M.load(name)
   vim.g.colors_name = name
 
   local theme = require('midnight.theme')
-  theme.apply()
+  theme.apply(name)
 
   require('midnight.migration').warn_if_github_source()
 
