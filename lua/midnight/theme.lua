@@ -260,7 +260,13 @@ function M.apply(name)
   link('FloatBorder', 'FzfLuaBorder')
   hi('FzfLuaHeaderText', { fg = cs.background }, { 'FzfLuaBufFlagCur' })
   hi('FzfLuaBufFlagAlt', { fg = cs.background })
-  link('Normal', 'FzfLuaLivePrompt')
+  hi('FzfLuaFzfCursorLine', {
+    fg = cs.background,
+    bg = cs == palette.daylight and cs.dark_grey or cs.med_grey,
+  })
+  link('Directory', { 'FzfLuaFzfMatch', 'FzfLuaFzfPrompt' })
+  link('DiagnosticOk', { 'FzfLuaFzfInfo', 'FzfLuaFzfMarker' })
+  link('Normal', { 'FzfLuaLivePrompt', 'FzfLuaFzfPointer', 'FzfLuaFzfSpinner' })
 
   vim.g.terminal_color_0 = cs.foreground
   vim.g.terminal_color_1 = cs.red
