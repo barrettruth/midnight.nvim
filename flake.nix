@@ -21,17 +21,7 @@
 
       devShells = forEachSystem (pkgs: {
         default = pkgs.mkShell {
-          packages = [
-            pkgs.just
-            pkgs.biome
-            pkgs.stylua
-            pkgs.selene
-            pkgs.lua-language-server
-            pkgs.vimdoc-language-server
-          ];
-        };
-
-        ci = pkgs.mkShell {
+          VIMRUNTIME = "${pkgs.neovim}/share/nvim/runtime";
           packages = [
             pkgs.just
             pkgs.biome

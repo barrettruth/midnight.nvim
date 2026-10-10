@@ -1,6 +1,6 @@
 local M = {}
 
----@class Highlight
+---@class Highlight: vim.api.keyset.highlight
 ---@field fg? string
 ---@field bg? string
 ---@field bold? boolean
