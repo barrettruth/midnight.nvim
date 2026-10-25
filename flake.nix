@@ -29,7 +29,6 @@
             pkgs.neovim
             pkgs.selene
             pkgs.lua-language-server
-            pkgs.vimdoc-language-server
           ];
         };
       });
