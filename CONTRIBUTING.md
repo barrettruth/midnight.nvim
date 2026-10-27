@@ -1,8 +1,5 @@
 # Contributing
 
-Development, issues, and pull requests happen on
-[Forgejo](https://forge.barrettruth.com/barrettruth/midnight.nvim).
-
 ## Scope
 
 midnight.nvim is a Neovim colorscheme focused on readable code. It is not a
