@@ -15,20 +15,10 @@ INSTALLATION                                           *midnight-installation*
 
 With vim.pack (Neovim 0.12+): >lua
     vim.pack.add({
-      'https://forge.barrettruth.com/barrettruth/midnight.nvim',
+      'https://github.com/barrettruth/midnight.nvim',
     })
 < Then set the colorscheme: >lua
     vim.cmd.colorscheme('midnight')
-<
-
-==============================================================================
-MIGRATION                                                 *midnight-migration*
-
-midnight.nvim will be removed from GitHub on October 31, 2026. Update your
-plugin source to Forgejo: >lua
-    vim.pack.add({
-      'https://forge.barrettruth.com/barrettruth/midnight.nvim',
-    })
 <
 
 ==============================================================================

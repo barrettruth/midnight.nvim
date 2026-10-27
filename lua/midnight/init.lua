@@ -26,8 +26,6 @@ function M.load(name)
   local theme = require('midnight.theme')
   theme.apply(name)
 
-  require('midnight.migration').warn_if_github_source()
-
   loading = false
 end
 
