@@ -1,12 +1,9 @@
-.venv/
 doc/tags
 *.log
 build
 io
 debug
-venv/
 CLAUDE.md
-__pycache__
 node_modules/
 
 .direnv/
