@@ -2,7 +2,7 @@
 
 Neovim theme for code, not colors.
 
-![Image](https://forge.barrettruth.com/attachments/098b9e97-62b8-4bca-9d00-980553e070e7)
+![Image](https://github.com/user-attachments/assets/9abb5126-15d7-4de4-ad6d-ec35975fec03)
 
 ## Installation
 
@@ -10,7 +10,7 @@ With `vim.pack` (Neovim 0.12+):
 
 ```lua
 vim.pack.add({
-  'https://forge.barrettruth.com/barrettruth/midnight.nvim',
+  'https://github.com/barrettruth/midnight.nvim',
 })
 ```
 
