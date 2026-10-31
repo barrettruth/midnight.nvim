@@ -1,6 +1,6 @@
 *midnight.txt* *midnight.nvim.txt*        Neovim theme for code, not colors
 
-Author:  Barrett Ruth <br@barrettruth.com> License: GPL-3.0
+Author:  Barrett Ruth <br@barrettruth.com> License: ISC
 
 ==============================================================================
 INTRODUCTION                                        *midnight* *midnight.nvim*
